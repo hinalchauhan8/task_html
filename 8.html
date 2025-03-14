@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+        </tr>
+
+        <tr align="center">
+            <td colspan="5">colspan column</td>
+        </tr>
+
+        <tr align="center">
+            <td rowspan="2">Rowspan <br>Cell</td>
+            <td>Cell 2</td>
+        </tr>
+
+        <tr>
+            <td>
+                <table border="1" cellpadding="14px" cellspacing="10px" bgcolor="yellow">
+                    <tr>
+                        <th>Inner Column<br> Heading 1</th>
+                        <th>Inner Column Heading 2</th>
+                    </tr>
+
+                    <tr align="center">
+                        <td rowspan="2" bgcolor="gray">Inner Data Cell<br>1</td>
+                    </tr>
+                    <tr bgcolor="lightgreen">
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <table border="1" cellpadding="14px" cellspacing="5px" bgcolor="lightpink">
+                                            <tr align="center">
+                                                <td>Inner Most<br> Column Heading<br>1</td>
+                                                <td>Inner Most<br>Column Heading<br>2</td>
+                                            </tr>
+
+                                            <tr align="center">
+                                                <td bgcolor="violet">InnerMost Data<br>Cell 1</td>
+                                                <td bgcolor="orange">InnerMost Data<br>Cell 2</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
